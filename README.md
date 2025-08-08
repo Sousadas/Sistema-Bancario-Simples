@@ -1,9 +1,4 @@
 # 🏦 Sistema de Gerenciamento de Contas Bancárias
-### Olá, sou eu, Fernando Mugiba! 👋
-
-Quero compartilhar com vocês a história por trás deste projeto que desenvolvi com muito carinho e dedicação. 
-Como desenvolvedor web apaixonado por tecnologia e finanças, sempre tive o sonho de criar algo que realmente fizesse diferença na vida das pessoas.
-
 ### 🚀 Como Usar
 
 1. **Clone o repositório** ou baixe os arquivos
