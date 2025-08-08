@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Contas Bancárias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏦 Sistema Bancário</h1>
+            <p>Gerencie suas contas bancárias de forma simples e segura</p>
+        </header>
+
+        <main>
+
+            <section class="create-account-section">
+                <h2>Criar Nova Conta</h2>
+                <form id="create-account-form" class="form-card">
+                    <div class="form-group">
+                        <label for="account-name">Nome do Titular:</label>
+                        <input type="text" id="account-name" name="accountName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="account-number">Número da Conta:</label>
+                        <input type="text" id="account-number" name="accountNumber" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="initial-balance">Saldo Inicial:</label>
+                        <input type="number" id="initial-balance" name="initialBalance" min="0" step="0.01" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Criar Conta</button>
+                </form>
+            </section>
+
+            <section class="accounts-section">
+                <h2>Contas Bancárias</h2>
+                <div id="accounts-container" class="accounts-grid">
+                 
+                </div>
+            </section>
+
+            <div id="transaction-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="modal-title">Realizar Transação</h3>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <form id="transaction-form">
+                            <input type="hidden" id="transaction-account-id">
+                            <div class="form-group">
+                                <label for="transaction-amount">Valor:</label>
+                                <input type="number" id="transaction-amount" min="0.01" step="0.01" required>
+                            </div>
+                            <div class="transaction-buttons">
+                                <button type="button" id="deposit-btn" class="btn btn-success">Depositar</button>
+                                <button type="button" id="withdraw-btn" class="btn btn-danger">Levantar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <section class="history-section">
+                <h2>Histórico de Transações</h2>
+                <div id="transaction-history" class="history-container">
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Sistema Bancário - Desenvolvido com HTML, CSS e JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
